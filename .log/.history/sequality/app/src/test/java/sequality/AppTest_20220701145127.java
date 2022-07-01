@@ -17,9 +17,15 @@ public class AppTest {
   public void testAppReternHelloWorld() {
     App classUnderTest = new App();
     assertEquals("Hello World!", classUnderTest.getGreeting());
-
   }
 
+  @Test
+  public void testSum() {
+    Calculate calculateTest = new Calculate();
+    int expected = 5;
+    assertEquals(expected, calculateTest.sum(2, 3));
 
+    assertEquals(expected, calculateTest.average(2, 3));
+  }
 
 }

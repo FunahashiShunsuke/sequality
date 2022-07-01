@@ -56,24 +56,10 @@ public class Calculate {
 
     for (int i = x; i <= y; i++) {
       if (i % 2 != 0) {
-        countOdd += 1;
+        
       }
     }
 
-    return (double) sumOdd(x, y) / countOdd;
+    return (double) sumTo(x, y) / z;
   }
-
-  public double averageEven(int x, int y) {
-
-    int countEven = 0;
-
-    for (int i = x; i <= y; i++) {
-      if (i % 2 == 0) {
-        countEven += 1;
-      }
-    }
-
-    return (double) sumOdd(x, y) / countEven;
-  }
-
 }

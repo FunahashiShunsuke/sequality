@@ -18,8 +18,23 @@ public class AppTest {
     App classUnderTest = new App();
     assertEquals("Hello World!", classUnderTest.getGreeting());
 
+    Calculate calculateTest = new Calculate();
+    int expected = 5;
+    assertEquals(expected, calculateTest.sum(2, 3));
   }
 
+  @Test
+  public void testSum() {
+    Calculate calculateTest = new Calculate();
+    int expected = 5;
+    assertEquals(expected, calculateTest.sum(2, 3));
+  }
 
+  @Test
+  public void testAverage() {
+    Calculate calculateTest = new Calculate();
+    double expected = 2.5;
+    assertEquals(expected, calculateTest.average(2, 3));
+  }
 
 }

@@ -27,8 +27,8 @@ public class App {
             + ".");
 
     System.out.println(
-        "Sum of odd of " + x + " to " + y + " is " + calculate.sumOdd(x, y) + ". Sum of even is "
-            + calculate.sumEven(x, y) + ".");
+        "Sum of odd of " + x + " to " + y + " is " + calculate.sumOdd(x, y) + " . Sum of even is "
+            + calculate.sumTo(x, y) + ".");
   }
 
 }

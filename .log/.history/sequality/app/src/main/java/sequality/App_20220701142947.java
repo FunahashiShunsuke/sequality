@@ -19,16 +19,12 @@ public class App {
     System.out.println(
         "Sum of " + x + " and " + y + " is " + calculate.sum(x, y) + " . Average is " + calculate.average(x, y) + ".");
 
-    x = 1;
-    y = 10;
+    System.out.println(
+        "Sum of " + x + " to " + y + " is " + calculate.sumTo(x, y) + " . Average is " + calculate.averageTo(x, y) + ".");
 
     System.out.println(
-        "Sum of " + x + " to " + y + " is " + calculate.sumTo(x, y) + " . Average is " + calculate.averageTo(x, y)
-            + ".");
-
-    System.out.println(
-        "Sum of odd of " + x + " to " + y + " is " + calculate.sumOdd(x, y) + ". Sum of even is "
-            + calculate.sumEven(x, y) + ".");
+        "Sum of " + x + " to " + y + " is " + calculate.sumTo(x, y) + " . Sum of " + x + " to " + y + " is "
+            + calculate.sumTo(x, y));
   }
 
 }
